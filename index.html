@@ -1,0 +1,284 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmacia Yusleydi</title>
+  <style>
+    :root {
+      --verde: #28a745;
+      --verde-oscuro: #1e7e34;
+      --blanco: #ffffff;
+      --gris-claro: #f8f9fa;
+      --sombra: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--gris-claro);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #28a745, #1e7e34);
+      color: var(--blanco);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: var(--verde-oscuro);
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    nav a {
+      color: var(--blanco);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #caffd4;
+    }
+
+    .content {
+      padding: 3rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--verde-oscuro);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--blanco);
+      border-radius: 10px;
+      box-shadow: 0 4px 10px var(--sombra);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .info {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .info p {
+      margin-top: 0.5rem;
+    }
+
+    .seccion {
+      margin-bottom: 4rem;
+    }
+
+    footer {
+      background-color: var(--verde-oscuro);
+      color: var(--blanco);
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ebea5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Farmacia Yusleydi</h1>
+    <p>¡Tu salud, nuestra prioridad! Encuentra lo que necesitas para sentirte mejor cada día.</p>
+  </header>
+
+  <nav>
+    <a href="#medicamentos">Medicamentos</a>
+    <a href="#horario">Horario</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="content">
+
+    <div class="seccion" id="medicamentos">
+      <h2>Medicamentos disponibles</h2>
+      <p>En Farmacia Yusleydi, ofrecemos una amplia gama de medicamentos tanto de marcas reconocidas como genéricos, siempre asegurándonos de brindarte productos de calidad al mejor precio. Aquí te mostramos una pequeña selección:</p>
+      <div class="galeria">
+        <div class="card">
+          <img src="medicamentos1.jpg" alt="Medicamentos 1" />
+          <div class="info">
+            <h3>Antibióticos y Analgésicos</h3>
+            <p>Para tratar infecciones y aliviar el dolor de forma efectiva y segura.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="medicamentos2.jpg" alt="Medicamentos 2" />
+          <div class="info">
+            <h3>Jarabes y Vitaminas</h3>
+            <p>Ayuda para fortalecer el sistema inmune y mejorar tu salud general.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion" id="comunes">
+      <h2>Medicamentos más comunes</h2>
+      <p>Estos medicamentos son de uso común para tratar diversas afecciones cotidianas:</p>
+      <div class="galeria">
+        <div class="card">
+          <img src="" alt="Amoxicilina 500mg" />
+          <div class="info">
+            <h3>Amoxicilina 500mg</h3>
+            <p>Antibiótico eficaz para infecciones respiratorias y urinarias.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="omeprazol.jpg" alt="Omeprazol 20mg" />
+          <div class="info">
+            <h3>Omeprazol 20mg</h3>
+            <p>Protege el estómago, aliviando la acidez y el reflujo gástrico.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="loratadina.jpg" alt="Loratadina 10mg" />
+          <div class="info">
+            <h3>Loratadina 10mg</h3>
+            <p>Alivia los síntomas de alergias estacionales y rinitis.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="diclofenaco.jpg" alt="Diclofenaco 50mg" />
+          <div class="info">
+            <h3>Diclofenaco 50mg</h3>
+            <p>Antiinflamatorio utilizado en dolores musculares y articulares.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="salbutamol.jpg" alt="Salbutamol Inhalador" />
+          <div class="info">
+            <h3>Salbutamol Inhalador</h3>
+            <p>Broncodilatador para mejorar la respiración en pacientes asmáticos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="card">
+  <img src="metformina.jpg" alt="Metformina 500mg" />
+  <div class="info">
+    <h3>Metformina 500mg</h3>
+    <p>Controla los niveles de glucosa en personas con diabetes tipo 2.</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="losartan.jpg" alt="Losartán 50mg" />
+  <div class="info">
+    <h3>Losartán 50mg</h3>
+    <p>Antihipertensivo utilizado para controlar la presión arterial alta y proteger los riñones.</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="azitromicina.jpg" alt="Azitromicina 500mg" />
+  <div class="info">
+    <h3>Azitromicina 500mg</h3>
+    <p>Antibiótico de amplio espectro, eficaz contra infecciones respiratorias y dérmicas.</p>
+  </div>
+</div>
+
+<div class="card">
+  <img src="naproxeno.jpg" alt="Naproxeno 500mg" />
+  <div class="info">
+    <h3>Naproxeno
+    <div class="seccion" id="horario">
+      <h2>Horario de atención</h2>
+      <p>Nos encontramos disponibles para ti durante los siguientes horarios:</p>
+      <ul>
+        <li><strong>Lunes a Viernes:</strong> 7:00 AM - 6:00 PM</li>
+        <li><strong>Sábados y domingos:</strong> Cerrado</li>
+      </ul>
+      <p>¡No dudes en visitarnos o contactarnos si necesitas algún medicamento urgente!</p>
+    </div>
+
+    <div class="seccion" id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o necesitas asistencia? ¡Estamos aquí para ayudarte! Puedes ponerte en contacto con nosotros de las siguientes maneras:</p>
+      <ul>
+        <li><strong>Teléfono / WhatsApp:</strong> <a href="tel:+529581747860">+52 958 174 7860</a></li>
+        <li><strong>Dirección:</strong> Avenida Salud, #123, Ciudad Bienestar, CP 12345.</li>
+        <li><strong>Email:</strong> <a href="mailto:contacto@farmaciayusleydi.com">contacto@farmaciayusleydi.com</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Farmacia Yusleydi. Todos los derechos reservados. | <a href="https://www.farmaciayusleydi.com">Visita nuestra web</a>
+  </footer>
+
+  <!-- Botón de WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/529581747860" target="_blank" title="Chatea con nosotros">
+    📱
+  </a>
+
+</body>
+</html>
